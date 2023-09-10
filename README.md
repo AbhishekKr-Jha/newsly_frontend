@@ -1,1 +1,1 @@
-# NEWSLY
+# NEWSLY 1.0
