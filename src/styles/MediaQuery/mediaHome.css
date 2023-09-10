@@ -1,0 +1,39 @@
+/* ............media query...... */
+@media only screen and (max-width: 600px) {
+  /* body{
+    background-color: red;
+  } */
+    .page1 img{
+        width: 100%;
+        height: 100vh;
+        z-index: -1000;
+        position: fixed;
+        top: 0px;
+    } 
+    .homeHeading{
+       
+        font-size:20vw;
+        position: relative;
+        background: -webkit-linear-gradient(#c00b26, #316f05);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+  
+    .page1 h3{
+        margin-left: 150px;
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    .page1 h5{
+        margin-top: 12px;
+        width: 80%;
+       font-weight: 700;
+        font-size:3vw; 
+        margin-bottom: 5vh;
+    }
+ 
+    
+
+
+
+  }

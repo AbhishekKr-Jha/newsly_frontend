@@ -1,0 +1,13 @@
+@media (max-width: 600px) {
+    .SigningC{
+flex-direction: column;
+overflow: hidden;
+        /* flex-wrap: wrap; */
+    }
+    .signingitem{
+        width: 300px;
+        font-size: 30px;
+        border-radius: 15px;  
+    }
+    
+}

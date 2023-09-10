@@ -1,0 +1,69 @@
+
+.RegisterationC{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+margin-left: 250px;
+}
+.CreateAccountContainer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+} 
+.namelist{
+   display: flex;
+   
+}
+.namefield{
+    width: 220px;
+}
+.CreateAccountContainer input{
+    background: transparent;
+    font-weight: 500;
+    font-size: 17px;
+    padding:8px 14px;
+    border-radius: 10%;
+    margin: 5px;
+}
+.editInput{
+width: 280px;
+}
+
+#div1{
+    display: flex;
+    margin: 8px;
+}
+
+#signinbtn{
+    border-radius: 54%;
+    width: 99px;
+    padding: 9px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+#div2{
+   padding: 20px;
+}
+
+.anotherPageLink{
+    text-decoration: none;  
+}
+
+
+#h2r{
+    margin-top:48px ;
+    font-size: 30px;
+}
+#smallHeading{
+    margin-bottom:-10px;
+    margin-top: 20px;
+    font-size:17px ;
+}

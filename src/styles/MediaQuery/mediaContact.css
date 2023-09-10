@@ -1,0 +1,73 @@
+@media (max-width: 600px) {
+    .contactC {
+        width: 100vw;    
+        margin-left: 0px; 
+display: block;
+    }
+.contactImage{
+    display: none;
+}
+    #contactLogo {
+        display: none;
+    }
+    
+
+
+    .contactText {
+        margin-right:0px;
+        height: 100%;
+        width: 100%;
+        font-size: 30px;
+    }
+    .box{
+        flex-direction: column;
+        align-items: center;
+     
+    }
+    #contactHeading {
+        margin-top: 15vh;
+        /* font-size:15vmin ; */
+        font-size:55px ; 
+    }
+    .imageIcons {
+        align-self:center;
+      margin-left:0px; 
+   
+    }
+    
+    /* .iconBtn{
+    background-color: green;
+    } */
+   
+    
+    #secondaryContactHeading {
+        /* font-size: 5vmin; */
+        font-size: 20px;
+        margin: 0px 20px;
+        margin-top: 5vh;
+        margin-bottom: 20px;
+    }
+    
+    .contactInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    .contactInput {
+        width: 80vmin;
+        font-weight: 400;
+        font-size: 16px;
+        border-bottom: ;
+        border-radius: 15px;
+        margin: 8px;
+    }
+ 
+ 
+    
+   
+
+}
+ 

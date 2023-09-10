@@ -1,0 +1,140 @@
+
+/* .mainC{
+    width: 100vw;
+    height: 100vh;
+} */
+.newsC{
+    margin-left:250px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    height: 100%;
+    color: white;
+    /* background:url('https://thumbs.gfycat.com/PracticalMemorableIbex-size_restricted.gif') ;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; */
+    padding-top: 70px;
+}
+
+.newsboxC{
+    margin: 60px 13px;
+    margin-bottom: 20px;
+ /* background-color: green; */
+    height: 200px;
+    width: 270px;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 8%;
+border:0.5px solid red;
+color: black;
+font-weight: 500;
+}
+.imageC{
+    /* background: url('https://i.pinimg.com/564x/a9/d6/05/a9d60534f8f7b6e7d960892db9b0f4ae.jpg') no-repeat center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -40px;
+    height: 170px;
+    width: 200px;
+    border-radius: 8%;
+    /* border: 1px double white;
+    padding: 3px; */
+    /* z-index: 99; */
+}
+.newspara{
+    text-align: center;
+    padding: 10px;
+}
+/* .newsbtn{
+    display:;
+    width: 46px;
+    height: 29px;
+    margin-right: 0;
+
+} */
+.newslink{
+    display: none;
+    position: relative;
+    right: 0px;
+}
+/* hovering.... */
+.newsboxC:hover{
+    height: 200px;
+    width: 280px;
+    transition:  0.1s ;
+}
+.newsboxC:hover .imageC{
+margin-top: -85px;
+height: 180px;
+width: 210px;
+transition:  0.1s ;
+
+}
+.newsboxC:hover .newslink{
+    display: block;
+font-size: 16px; 
+padding-bottom: 5px;
+transition:  0.1s ;
+}
+pre{
+    padding: 3px;
+    font-size: 13px;
+}
+
+
+.frontBack{
+background-color: aqua;
+}
+
+.dot{
+    content: "\22EE";
+    margin-left: 15px;
+    cursor: pointer;
+}
+.menuC{
+    display: none;
+}
+
+    .menu {
+        display: flex;
+       align-items: flex-end;
+        justify-content: flex-end;
+        width: 250px;
+       
+}
+.iconc{
+    margin: 0 5px;
+    cursor: pointer;
+}
+.newsboxC:hover .menuC {
+    /* background-color: red; */
+   display: block;
+  }
+  /* .infolist{
+    list-style: none;
+    border: 1px solid red;
+font-size: 14px;
+padding: 8px;
+position: relative;
+    top: 60px;
+    left: -22px;
+    display: none;
+
+  } */
+
+  /* #infoicon:hover + .infolist {
+    display: block;
+    background-color: yellow;
+  } */
+
+
+  #searchBox{
+    position: fixed;
+    right: 30px;
+    top: 16px;
+  }

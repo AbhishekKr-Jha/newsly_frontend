@@ -1,0 +1,19 @@
+@media (max-width: 600px) {
+.loginC{
+    margin-left: 0px;
+}
+
+    #h2l{
+        margin-bottom:120px ;
+        font-size: 35px;
+    }
+
+    .loginBox input{
+        font-weight: 400;
+        font-size: 16px;
+        border-radius: 15;
+        margin: 8px;
+   
+}
+
+}

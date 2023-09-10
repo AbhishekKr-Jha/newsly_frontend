@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+html,body{
+  width: 100%;
+  /* background-color: red; */
+  height: 100%;
+} 
+
+.containerM{
+width: 100%;
+height:100%;
+  display: flex;
+  position: relative;
+} 
+
+
+
+
+
+
+
+/* position: relative;
+ z-index: -; */
+ /* background-color: black;  */
+ /* background-image: linear-gradient( #3e3a3a, #333); */

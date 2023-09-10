@@ -1,0 +1,23 @@
+.myNewsBox{
+   position: relative;
+   right: 110px;
+   display: flex;
+   flex-direction: column;
+   justify-content: content;
+   align-items: center;
+   color: black;
+   height:90vh;
+   gap: 20px;
+   font-size: 20px;
+   font-weight: 600;
+}
+
+/* span NavLink{
+   text-decoration: none; 
+  color: green;
+} */
+
+#addNews{
+text-decoration: none;
+font-size: 18px;
+}

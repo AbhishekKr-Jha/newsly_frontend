@@ -1,0 +1,27 @@
+.aboutC{
+    margin-left: 250px;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutbox{
+    /* width: 86%;
+background-size: contain;
+height:550px; */
+}
+.aboutbox h1{
+    margin-top: 50px;
+   font-size: 60px;
+}
+.infotext{
+    margin: 50px;
+}
+.para{
+    font: 20px;
+    
+}
+

@@ -1,0 +1,105 @@
+
+.contactC {
+
+    margin-left: 200px;
+    width: calc(100vw - 220px);
+    height: 100vh;                    
+    display: flex;
+
+
+}
+
+.contactImage {
+    margin-top: 30px;
+    /* position: relative; */
+}
+
+#contactLogo {
+    width: 100%;
+    height: 100%;
+}
+
+.contactText {
+    margin-right: -50px;
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    text-align: center;
+}
+.box{
+     display: flex;
+     width: 100%;
+    
+}
+.imageIcons {
+   align-self: center;
+  margin-left:35px; 
+}
+
+/* .iconBtn{
+background-color: green;
+} */
+
+
+
+#contactHeading {
+    margin-top: 44px;
+    font-size: 60px;
+    text-align: left;
+
+}
+
+#secondaryContactHeading {
+    font-size: 20px;
+    margin: 15px;
+    margin-top: 55px;
+    text-align: left;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contactInput {
+    width: 345px;
+    background: transparent;
+    /* color: white; */
+    font-weight: bold;
+    font-size: 17px;
+    padding: 8px 14px;
+    /* border-style: none; */
+    /* border-bottom: 2px solid grey; */
+    border-radius: 15px;
+    margin: 12px;
+}
+
+/* .contactInput:focus {
+    border-style: none;
+    border-bottom: 2px solid grey;
+    transform: translate3d(404px);
+    outline: none;
+} */
+
+/* #contactTextarea:focus {
+    width: 380px;
+    transition: width 1s;
+} */
+
+#contactBtn {
+    /* position: absolute; */
+    border-radius: 54%;
+    width: 99px;
+    padding: 9px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-left: -23%;
+    border-style: none;
+    background-color:rgb(199, 202, 191); ;
+}
+
+#contactBtn:hover {
+    background-color:rgb(148, 152, 146) 
+}

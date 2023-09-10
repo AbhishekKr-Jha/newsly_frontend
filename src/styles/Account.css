@@ -1,0 +1,81 @@
+.homeC{
+    margin-left: 250px; 
+    /* background-color: red; */
+    height:100vh;
+    width: 100vw;
+    overflow: hidden; /* Prevent scrolling */
+    /* background:url('https://thumbs.gfycat.com/PracticalMemorableIbex-size_restricted.gif') ;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; */
+ }
+ .homeBox{
+ height:100%;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;  
+ }
+ .homeheading{
+     /* background-color: greenyellow; */
+     text-align: center;
+     font-size: 100px;             
+     transform: translateY(100px);
+     background: -webkit-linear-gradient(#c00b26, #316f05);
+     /* background: -webkit-linear-gradient(#eee, #333); */
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+ .items{
+     /* position: relative; */
+     border: 1px solid white;
+     padding: 9px;
+ position: relative;
+ color: white;
+ font-size: 1.4rem;
+ border-radius: 50%;
+ }
+ #item1{
+     
+    background: black;
+    top: -220px;
+    left: 124px;
+ }
+ #item2{
+     background: black;
+  
+     top: -180px;
+     left: 4px;
+ 
+ }
+ #item3{
+ 
+     top: -244px;
+     left: 525px;
+ }
+ #item4{
+     top: -118px;
+     left: 190px;
+ }
+ #item5{
+     top: 133px;
+     right: 207px;
+ }
+ #item6{
+         top: 163px;
+     right: -79px; 
+ }
+ #item7{
+     top: -200px;
+     right: 237px;
+ }
+ 
+ #item8{
+      top: 187px;
+     right: 640px;
+ }
+ 
+ 
+ 
+ 
+  

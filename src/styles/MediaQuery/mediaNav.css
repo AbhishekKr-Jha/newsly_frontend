@@ -1,0 +1,49 @@
+@media (max-width: 600px) {
+
+#vnav {
+        width: 100vw;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .menuCloseIconStyle{
+        display:block;
+        }
+       
+    .navlist {
+        margin-top: 15px;
+    }
+    
+    .heading {
+margin-top: 10vh;
+    }
+    #navLogo {
+        margin-top: 15px;      
+    }
+    
+    #logoHeading {
+       font-size: 55px;
+    }
+    .navitems {
+        /* width: 250px; */
+              /* width: 250px; ----------->jab yaha hover me width dete hai to kuch grabar hone leagta hai ta phir navbar.css me bhi jab navitems ko width dete hai to garbar cyalu ho jata hai  */
+    }
+   
+    
+    .navitems:hover {
+        background-color: transparent;
+    }
+    
+    .navitems:hover .listitems {
+        font-size: 24px;  
+        color: red;
+    }
+     
+   
+    
+    
+    
+
+
+}

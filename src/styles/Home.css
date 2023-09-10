@@ -1,0 +1,73 @@
+
+.homeC{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(80, 77, 77,0.4);
+    color: green;
+
+}
+.page1{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1px;
+    text-align: center;
+  
+}
+.page1 img{
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    position: fixed;
+} 
+.homeHeading{
+    font-size:12vw;
+    position: relative;
+    background: -webkit-linear-gradient(#c00b26, #316f05);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.homeHeading::before{
+    content: "Newsly";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    -webkit-text-stroke: 2px rgb(238, 10, 86);
+    z-index: -1;
+}
+.page1 h3{
+    margin-left: 400px;
+}
+.page1 h5{
+    width: 60%;
+    /* background-color: green; */
+    font-size:18px;
+}
+#startBtn{
+    border-radius: 8%;
+    width: 99px;
+    padding: 9px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-style: none;
+    background-color:rgba(89, 83, 82, 0.7); ;
+} 
+#startBtn:hover {
+    background-color:rgb(148, 152, 146) 
+}
+
+
+
+/* 2nd page.......... */
+.page2{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+

@@ -1,0 +1,48 @@
+/* ............media query...... */
+@media (max-width: 600px) {
+    .RegisterationC{
+    margin-left: 0px;
+    }
+#h2r{
+    margin-top:3vh ;
+
+
+}
+#smallHeading{
+margin-bottom:8px ;
+    font-size:17px ;
+}
+
+    .namelist{
+        display: flex;
+        flex-direction: column;
+    }
+.namefield{
+    width: 80vmin;
+}
+.CreateAccountContainer input{
+    font-weight: 400;
+    font-size: 16px;
+    /* border-radius: 8%; */
+    border-radius: 15px;
+    margin: 6px;
+}
+.editInput{
+/* width: 60vmin; */
+width: 80vmin;
+/* width: 220px; */
+}
+
+#div1{
+    display: flex;
+    margin: 8px;
+}
+
+#signinbtn{
+    background-color: rgb(226, 221, 214);
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 8px;
+    margin-top: 10px;
+}
+} 

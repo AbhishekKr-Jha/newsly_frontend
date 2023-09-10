@@ -1,0 +1,135 @@
+
+
+
+#vnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: black; */
+    /* background:url('https://d2r55xnwy6nx47.cloudfront.net/uploads/2018/08/TidalDisruptions_A_1440x810.gif') no-repeat center ; */
+    /* background-position: center; */
+    /* background-color:black; */
+    width: 250px;
+    height: 100vh;
+    z-index: 9999;
+}
+.menuCloseIconStyle{
+position:absolute;
+top:0;
+right:0;
+margin: 10px ;
+display:none;
+
+}
+
+.navlist {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.heading {
+   
+    text-align: center;
+}
+#navLogo {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 50px;
+  
+}
+
+#logoHeading {
+    background: -webkit-linear-gradient(#c00b26, #316f05);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+}
+
+.navitems {
+    padding: 10px 0px;
+    
+   
+}
+
+.navitems:hover {
+    background-color: red;
+}
+
+.listitems {
+    font-weight: 500;
+    color: green;
+    font-size: 20px;
+    text-decoration: none;
+    /* width: 250px; */
+}
+
+.navitems:hover .listitems {
+    position: relative;
+    left: 5px;
+    font-size: 22px;
+    transition: 0.1s;
+    color: white;
+}
+
+.listitems:active {
+    font-size: 22px;
+}
+
+#logout{
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.account{
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+    /* background-color: green; */
+}
+
+/* account menu...... */
+.accountMenu{
+    background: transparent;
+    position: absolute;
+    top: -110px;
+    left: 43px;
+    width: 115px;
+   background: white;
+    display: none;
+    /* background: transparent; */
+}
+.accountMenuItems{
+    padding: 0px 8px;
+    width: 100%;
+    display:flex ;
+    flex-direction: column;
+justify-content: space-evenly;
+}
+.accountMenuItems span{
+    font-weight: 600;
+    padding:12px 6px;
+    border-bottom: 2px solid black;
+cursor: pointer;
+}
+#gh{
+    text-decoration: none;
+}
+.accountMenuItems span:hover{
+font-size: 14px;
+color:grey;
+font-weight: 500;
+}
+.account:hover  .accountMenu{
+display: block;
+
+}
+
+
+.active{
+   color: red;
+   font-size: 22px;
+}
+
+

@@ -1,0 +1,46 @@
+
+.loginC{
+margin-left: 250px;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginBox{
+    margin-top: -90px;
+    display: flex;
+    flex-direction: column;
+}
+.loginBox input{
+            background: transparent;
+       
+            font-weight: 500;
+            font-size: 17px;
+            padding:8px 14px;
+            border-radius: 10%;
+            margin: 12px;
+    }
+
+#signinbtn{
+ border-radius: 54%;
+    width: 99px;
+    padding: 9px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* #signinbtn:hover{
+    background: url('https://media.nature.com/lw767/magazine-assets/d41586-018-07042-4/d41586-018-07042-4_16202168.gif') center;
+} */
+#div2{
+   padding: 13px;
+}
+#l4{
+    text-decoration: none;  
+}
+#h2l{
+    margin-bottom:120px ;
+    font-size: 30px;
+}
