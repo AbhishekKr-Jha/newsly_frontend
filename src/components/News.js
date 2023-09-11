@@ -4,7 +4,7 @@ import BookmarkAddIcon from '@mui/icons-material/BookmarkAdd';
 import BookmarkAddedIcon from '@mui/icons-material/BookmarkAdded';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import LinearProgress from '@mui/material/LinearProgress';
+// import LinearProgress from '@mui/material/LinearProgress';
 import { ThreeDots } from 'react-loader-spinner';
 import '../styles/News.css'
 
@@ -16,7 +16,8 @@ export default function News() {
 
     const [ndata, setndata] = useState(null)
     const [Loader, setLoader] = useState(true)
-    const [bookmarkIcon, setbookmarkIcon] = useState([])
+    const [run,setrun]=useState(true)
+    const [bookmarkIcon, setbookmarkIcon] = useState("")
     let bookmarkStaus = "Bookmark added successfully"
 
     const notify = (text) => toast.success(text, {
@@ -31,29 +32,35 @@ export default function News() {
     });
 
     useEffect(() => {
+        console.log(run)
+        if(run){
         const fetchData = async () => {
             try {
+            
                 const response = await fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=c692d694a23b43b9bac3750851c4d78c`);
                 const data = await response.json();
                 console.log(data);
                 setndata(data)
                 setbookmarkIcon(Array(data.articles.length).fill(false));
+                sessionStorage.setItem('runOrNot',false)
                  setLoader(false)
-
+setrun(false)
+console.log("it is running agian")
 
             } catch (error) {
                 console.error('Error:', error);
                 return error
             }
         };
-
+     
         fetchData();
-    }, []);
+        }
+    },[run]);
 
 
     const addBookmark = async (element) => {
         const id = localStorage.getItem('user')
-
+console.log(element)
         try {
             const { data } = await axios.post(`http://localhost:5000/userBookmarks/${id}`, element)
             if (data.success) {

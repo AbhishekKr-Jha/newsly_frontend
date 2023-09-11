@@ -11,7 +11,7 @@ import axios from 'axios'
 import '../styles/MyNews.css'
 
 export default function MyNews() {
-    const [myNews, setmyNews] = useState([])
+    const [myNews, setmyNews] = useState("")
 
 
 
@@ -27,47 +27,45 @@ export default function MyNews() {
     });
 
     useEffect(() => {
-    
-        getMyBookmarks()
-    }, [])
-    const getMyBookmarks = async () => {
-        const id = localStorage.getItem('user')
-        try {
-          
-            const { data } = await axios.post(`http://localhost:5000/getBookmarks/${id}`)
-            console.log("hello")
-            console.log(data)
-            if (data.success) {
-                setmyNews(data.bookmarks)
+        const getMyBookmarks = async () => {
+            const id = localStorage.getItem('user')
+        
+            try {
               
-                console.log(data.bookmarks)
+                const { data } = await axios.post(`http://localhost:5000/getBookmarks/${id}`)
+                console.log("hello")
+                console.log(data)
+                if (data.success) {
+                    setmyNews(data.bookmarks)
+                    console.log(data.bookmarks)
+                }
+            } catch (error) {
+                console.log("the err ___", error)
             }
-        } catch (error) {
-            console.log("the err ___", error)
+    
         }
 
-    }
+        getMyBookmarks()
+    }, [])
 
 
-
-    // const delBookmark = async (element) => {  
-    // }
 
 
     const removeSavedBookmark =async (element) => {
         const id = localStorage.getItem('user')
+        console.log(element)
         try {
-            const { data } = await axios.post(`http://localhost:5000/removeBookmarks/${id}`, element)
+            const { data } = await axios.delete(`http://localhost:5000/removeBookmarks/${id}`, element)
             if (data.success) {
-                console.log("it is working")
                 console.log(data.message)
-                
+            // setmyNews(data.user.bookmarks)
+            console.log(data.delBookmark)
+
                 notify("bookmark removed successfully")
             }
         } catch (error) {
             console.log(error)
         }
-        
        
     }
 
@@ -75,9 +73,8 @@ console.log(myNews,'myNews')
     return (
         <>
             <div className="newsC">
-                {myNews?.length==0 && console.log(myNews.length)}
                 <ToastContainer/>
-                {myNews?.length!==0 ? (myNews?.map((ele, index) => {
+    {  myNews.length!==0 ? (myNews.map((ele, index) => {
                     return <div class="newsboxC" key={index} id={`news${index}`}>
 
                         <div class="imageC" style={{ backgroundImage: ele.urlToImage ? `url(${ele.urlToImage})` : `url('https://img.freepik.com/free-photo/eye-mythological-dragon-fire-generative-ai_188544-12557.jpg?w=2000')` }}>
@@ -87,7 +84,7 @@ console.log(myNews,'myNews')
                             <a className='newslink' href={ele.url}>...more</a>
                             <div className="menuC">
                                 <div className="menu">
-                                    <Box><IconButton onClick={() => { removeSavedBookmark(index, ele) }}><BookmarkAddedIcon /></IconButton></Box>
+                                    <Box><IconButton onClick={() => { removeSavedBookmark(ele) }}><BookmarkAddedIcon /></IconButton></Box>
  </div>
 
                             </div>
