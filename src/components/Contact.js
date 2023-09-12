@@ -5,6 +5,7 @@ import { Box, IconButton } from '@mui/material'
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 import AlternateEmailSharpIcon from '@mui/icons-material/AlternateEmailSharp';
 
+
 export default function Contact() {
   return (
     <>
@@ -36,8 +37,11 @@ export default function Contact() {
               <button type="submit" id='signinbtn'>Send</button>
             </form>
           </div>
+          
         </div>
+    
 
+      
       </>
       )
 }

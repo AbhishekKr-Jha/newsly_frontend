@@ -4,11 +4,29 @@
   background-color: black;
   color: white;
 margin-left:250px ;    
-width: 100vw;
-height: 60vh;
-
-
+width: calc(100vw-250px);
 }
+.footerImg{
+    position: relative;
+}
+.footerImg img{
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    width: 40%;
+}
+.iconContainer{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer hr{
+  
+ margin: auto;
+        width: 90%;
+}
+/* 
 .firstFooterDiv{
     display: flex;
     flex: column;
@@ -42,4 +60,4 @@ height: 60vh;
     justify-content: center;
     align-items: center;
     background-color: red;
-}
+} */

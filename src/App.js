@@ -29,14 +29,11 @@ const dispatch=useDispatch()
   
  return(
     <>
- 
+
       <div className="containerM">
         <Logo/>
-        <BrowserRouter>
-          <Navbar />
-
-
-          <Routes>
+   <Navbar />
+<Routes>
             <Route index element={<Home />} />
             <Route path="/" element={<Home />} />
             <Route path="/docs" element={<Docs/>} />
@@ -49,11 +46,10 @@ const dispatch=useDispatch()
             <Route path="mynews" element={<MyNews />} />
             <Route path="myprofile" element={<Profile />} />
             <Route path="footer" element={<Footer />} />
-
+      
           </Routes>
-        </BrowserRouter>
-
       </div>
+      <Footer/>
     </>
   );
 }

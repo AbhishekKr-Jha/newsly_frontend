@@ -13,14 +13,14 @@ width:"45px",
 position:"absolute",
 top:"6px",
 left:"5px",
-display:"none"
+
     }
     const styleIcon={
       width:"45px",
 position:"absolute",
 top:"6px",
 right:"5px" ,
-display:"none"
+
 
     }
   return ( 
