@@ -11,7 +11,7 @@ import axios from 'axios'
 import '../styles/MyNews.css'
 
 export default function MyNews() {
-    const [myNews, setmyNews] = useState("")
+    const [myNews, setmyNews] = useState([])
 
 
 
@@ -20,7 +20,7 @@ export default function MyNews() {
         autoClose: 1900,
         hideProgressBar: true,
         closeOnClick: false,
-        pauseOnHover: false,
+        pauseOnHover: false, 
         draggable: false,
         progress: undefined,
         theme: "colored",
@@ -94,7 +94,7 @@ console.log(myNews,'myNews')
                 }) ) :(<>
                 
 <div className="myNewsBox">
-    <h1>No Bookmarks available</h1>
+    <h1>No Bookmarks added</h1>
    <span><NavLink id='addNews'  to='/newsapi'>Add some... </NavLink>of the news of your interest</span> 
 </div>
                 

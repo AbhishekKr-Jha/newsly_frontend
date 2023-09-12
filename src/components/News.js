@@ -17,7 +17,7 @@ export default function News() {
     const [ndata, setndata] = useState(null)
     const [Loader, setLoader] = useState(true)
     const [run,setrun]=useState(true)
-    const [bookmarkIcon, setbookmarkIcon] = useState("")
+    const [bookmarkIcon, setbookmarkIcon] = useState([])
     let bookmarkStaus = "Bookmark added successfully"
 
     const notify = (text) => toast.success(text, {
@@ -74,10 +74,10 @@ console.log(element)
     const delBookmark = async (element) => {
         const id = localStorage.getItem('user')
         try {
-            const { data } = await axios.post(`http://localhost:5000/removeBookmarks/${id}`, element)
+            const { data } = await axios.delete(`http://localhost:5000/removeBookmarks/${id}`, element)
             if (data.success) {
                 console.log("it is working")
-                console.log(data.message)
+                console.log(data.message) 
             }
         } catch (error) {
             console.log(error)
