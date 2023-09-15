@@ -10,9 +10,6 @@ display: block;
     #contactLogo {
         display: none;
     }
-    
-
-
     .contactText {
         margin-right:0px;
         height: 100%;
@@ -26,7 +23,6 @@ display: block;
     }
     #contactHeading {
         margin-top: 15vh;
-        /* font-size:15vmin ; */
         font-size:55px ; 
     }
     .imageIcons {
@@ -34,14 +30,8 @@ display: block;
       margin-left:0px; 
    
     }
-    
-    /* .iconBtn{
-    background-color: green;
-    } */
-   
-    
+  
     #secondaryContactHeading {
-        /* font-size: 5vmin; */
         font-size: 20px;
         margin: 0px 20px;
         margin-top: 5vh;
@@ -64,10 +54,5 @@ display: block;
         border-radius: 15px;
         margin: 8px;
     }
- 
- 
-    
-   
-
 }
  

@@ -1,7 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+
 import { MDBContainer, MDBBtn, MDBIcon } from 'mdb-react-ui-kit'
 import '../styles/Footer.css'
+import '../styles/MediaQuery/mediaFooter.css'
 
 export default function Footer() {
     return (
@@ -9,16 +11,13 @@ export default function Footer() {
 
 
 
-            <footer className="text-center text-lg-start bg-white text-muted footerC">
+            <footer className="text-center text-lg-start bg-white text-muted footerC " >
 
                 <section className="d-flex justify-content-center justify-content-lg-between pb-4">
 
-
-
                     <MDBContainer className=' iconContainer '>
 
-
-                        <div className="me-5 d-none d-lg-block">
+<div className="me-5 d-none d-lg-block ">
                             <span>Get connected with us on social networks:</span>
                         </div>
                         <section className=''>
@@ -61,7 +60,7 @@ export default function Footer() {
                                 floating
                                 className='m-1'
                                 style={{ backgroundColor: '#0082ca' }}
-                                href='#!'
+                                href='https://www.linkedin.com/in/abhishek-jha1108/' target="_blank" rel="noopener noreferrer"
                                 role='button'>
                                 <MDBIcon fab icon='linkedin-in' />
                             </MDBBtn>
@@ -70,7 +69,7 @@ export default function Footer() {
                                 floating
                                 className='m-1'
                                 style={{ backgroundColor: '#333333' }}
-                                href='#!'
+                                href='https://github.com/AbhishekKr-Jha' target="_blank" rel="noopener noreferrer"
                                 role='button'>
                                 <MDBIcon fab icon='github' />
                             </MDBBtn>
@@ -82,7 +81,7 @@ export default function Footer() {
 
 
 
-                <section  >
+                <section  style={{ backgroundColor: 'green' }} >
                     <hr />
                     <div className="container text-center text-md-start mt-5">
 
@@ -116,7 +115,7 @@ export default function Footer() {
 
 
 
-                            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" >
+                            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4"  style={{ backgroundColor: 'blue' }}>
 
                                 <h6 className="text-uppercase fw-bold mb-4">
                                     Useful links
@@ -137,7 +136,7 @@ export default function Footer() {
 
 
 
-                            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" >
+                            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"  style={{ backgroundColor: 'yellow' }}>
 
                                 <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                                 <p><i className="fas fa-home me-3 text-secondary"></i> India , W.B. Kolkata</p>

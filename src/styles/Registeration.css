@@ -24,12 +24,12 @@ margin-left: 250px;
 .namefield{
     width: 220px;
 }
-.CreateAccountContainer input{
+ input{
     background: transparent;
     font-weight: 500;
     font-size: 17px;
     padding:8px 14px;
-    border-radius: 10%;
+    border-radius: 15px;
     margin: 5px;
 }
 .editInput{

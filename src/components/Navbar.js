@@ -1,9 +1,7 @@
 import React from 'react'
 import { useNavigate, NavLink, Link } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux'
-
 import '../styles/Navbar.css'
-// import ShowAccount from '../Items/ShowAccount'
 import '../styles/MediaQuery/mediaNav.css'
 import { Box, IconButton, Modal, Popover, Typography, Button } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close';
@@ -12,7 +10,6 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import { logout } from '../redux/LoginSlice'
 import Profile from '../Items/Profile';
-import AccountMenu from '../Items/AccountMenu';
 
 
 
@@ -51,21 +48,6 @@ export default function Navbar() {
         boxShadow: 24,
 
     };
-
-    //todo... popper menu
-    // const [anchorEl, setAnchorEl] = React.useState(null);
-
-    // const handleClick = (event) => {
-    //   setAnchorEl(event.currentTarget);
-    // };
-
-    // const handleClose = () => {
-    //   setAnchorEl(null);
-    // };
-
-    // const open = Boolean(anchorEl);
-    // const id = open ? 'simple-popover' : undefined;
-
 
 
     //todo....hiding navigation window.......
@@ -151,56 +133,14 @@ export default function Navbar() {
                             aria-labelledby="modal-modal-title"
                             aria-describedby="modal-modal-description"
                         >
-                            <Box sx={style}>
+                            <Box sx={style} >
 
                                 <Profile />
                             </Box>
                         </Modal>
                     </div>
                     </>}
-                    {/* <div className="account">
-                        <IconButton ><AccountCircleRoundedIcon sx={{ fontSize: "38px" }} />
-                        </IconButton>
-                        <div className="accountMenu">
-                            <div className="accountMenuItems">
-                                <span onClick={handleOpen}  >My Profile</span>
-                                <span  >Bookmarks</span>
-                                <span style={{ borderBottom: "none" }} onClick={Logout} >Logout</span>
-                            </div>
-                        </div>
-
-                        <Modal
-                            open={open}
-                            onClose={handleClose}
-                            aria-labelledby="modal-modal-title"
-                            aria-describedby="modal-modal-description"
-                        >
-                            <Box sx={style}>
-
-                                <Profile />
-                            </Box>
-                        </Modal>
-                    </div> */}
-                        {/* <Popover
-//aria-describedby={id}   onClick={handleClick}
-        id={id}
-        open={open}
-        anchorEl={anchorEl}
-        onClose={handleClose}
-        anchorOrigin={{
-            vertical: 'bottom',
-            horizontal: 'right',
-          }}
-          transformOrigin={{
-            vertical: 'bottom',
-            horizontal: 'left',
-          }}
-      >
-       helloo
-      </Popover> */}
-
-                        {/* onClick={handleOpen} */}
-
+                   
 
                        
 

@@ -1,7 +1,6 @@
 .aboutC{
-    margin-left: 250px;
+    margin-left: 200px;
     width: 100vw;
-    height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -9,19 +8,68 @@
     align-items: center;
 }
 .aboutbox{
-    /* width: 86%;
-background-size: contain;
-height:550px; */
-}
-.aboutbox h1{
-    margin-top: 50px;
-   font-size: 60px;
+   display: flex;
+   width: 100%;
+   
 }
 .infotext{
-    margin: 50px;
+    margin: 20px 15px; 
+    width: ;
+}
+.infotext h1{
+  margin: 55px 0px;
+}
+
+.aboutbox img{
+    margin: 10px 0;
+    /* border: 2px solid red; */
+    width: 45vw;
 }
 .para{
     font: 20px;
-    
+    text-align: center;   
 }
 
+
+.ourMotoBox{
+   padding: 0 35px; 
+}
+.ourMotoBox img{
+    width: 250px;
+}
+.aboutOurVisioners {
+    margin:50px;
+
+}
+.visionersBox{
+    width: 60vw;
+  padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+   margin: 60px 40px;
+    transition: all linear 0.8s;
+}
+.visionersImgBox{
+   width:220px;
+   height: 160px; 
+}
+.visionersImgBox img{
+    border-radius: 15px;
+    width: 90%;
+object-fit: cover;
+ 
+}
+.visionersTextBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.visionersBox:hover {
+    border-radius: 15px;
+   width: 63vw;
+   background-color: aquamarine;
+   transition:all linear 0.2s ease-in-out;
+   transform: translateX(-20px);
+}

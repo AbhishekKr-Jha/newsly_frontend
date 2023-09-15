@@ -43,10 +43,10 @@ const getLogin=(e)=>{
 const name=e.target.name
 const value=e.target.value
 setloginData({...loginData,[name]:value})
-
 }
 
 const loginBtnClick=async(e)=>{
+    console.log("yes")
     e.preventDefault()
     try {
     const {data}=await axios.post('http://localhost:5000/login',loginData)     

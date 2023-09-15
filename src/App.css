@@ -7,17 +7,28 @@
 html,body{
   width: 100%;
   /* background-color: red; */
-  height: 100%;
+  height: max-content;
 } 
+
 
 .containerM{
 width: 100%;
-height:100%;
+
   display: flex;
   position: relative;
 } 
 
+.containerM::before{
+  content: "";
+  width: 100%;
+height: 100%;
 
+  background-color: rgba(218, 223, 225,0.4);
+  position: fixed;
+  transform: skewY(-25deg);
+  top: -50%;
+  z-index:-100 ;
+}
 
 
 
