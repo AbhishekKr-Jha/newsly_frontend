@@ -11,6 +11,10 @@ import axios from 'axios';
 
 export default function Profile() {
   const [userLoginData, setuserLoginData] = useState("")
+
+  const element = document.getElementsByClassName('userProfileData')[0]
+  const updationForm=document.getElementsByClassName('updationForm')[0]
+
   useEffect(() => {
     const userData = JSON.parse(localStorage.getItem('userLoginDetails'))
     console.log(userData)
@@ -21,9 +25,9 @@ export default function Profile() {
 
 
   const updateProfile = () => {
-    const element = document.getElementsByClassName('userProfileData')[0]
+   
     element.style.display = "none"
-    const updationForm=document.getElementsByClassName('updationForm')[0]
+  
    updationForm.style.display="flex"
   }
 
@@ -44,6 +48,8 @@ console.log(userLoginData)
       if(data.success){
         localStorage.setItem('userLoginDetails',JSON.stringify(userLoginData))
         console.log("updation process successful")
+ element.style.display = "flex"
+       updationForm.style.display="none"
       }
       console.log(data.message)
     } catch (error) {
@@ -64,12 +70,12 @@ console.log(userLoginData)
             <h3>{userLoginData.firstName}&nbsp;_&nbsp;{userLoginData.lastName}</h3><IconButton onClick={updateProfile}> <EditIcon /></IconButton>
           </div>
         </div>
-        {/* <div className="right">
+        <div className="right">
           <span>joined on :&nbsp; khewfrkjfk</span>
           <span>email:&nbsp;{userLoginData.email}</span>
           <span>contact:&nbsp;{userLoginData.contact}</span>
           <span>your intersts: &nbsp;</span>
-        </div> */}
+        </div>
         </div>
     
         <div className="updationForm" style={{display:"none"}}>

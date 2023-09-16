@@ -1,15 +1,11 @@
 .profileC{
     width: 100%;
-    height: 100%;
-    /* background-color: yellow; */
-  
-   
+    height: 100%;   
 }
 .userProfileData{
 display: flex;
 }
 .left{
-/* background-color: red; */
 padding: 40px;
 text-align: center;
 width: max-content;
