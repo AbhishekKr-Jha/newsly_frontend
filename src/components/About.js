@@ -32,7 +32,7 @@ export default function About() {
                     <h1>Our Creators</h1>
 
                     <div className="visionersBox">
-                        <div className="visionersImgBox">
+                        <div className="visionersImgBox ">
                             <img src="https://cdnph.upi.com/svc/sv/upi/8591406129395/2014/1/b00f81af6da48cf5c823ff149cbcc3ed/Robert-Downey-Jr-discusses-his-role-in-Iron-Man-4.jpg" alt="loading..." />
                             <p >Iron Man</p>
                         </div>
@@ -44,12 +44,16 @@ export default function About() {
                     </div>
 
                     <div className="visionersBox">
-                       <div className="visionersTextBox">
+                        <div className="visionersImgBox visionersRightImgMobileView">
+                            <img src="https://i.ndtvimg.com/mt/movies/2014-03/chris-evans-ap.jpg" alt="loading..." />
+                            <p >Iron Man</p>
+                        </div>
+                        <div className="visionersTextBox ">
                             <h1>C.E.O.</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa explicabo
                                 <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, possimus.</p>
                         </div>
-                        <div className="visionersImgBox">
+                        <div className="visionersImgBox visionersRightImg">
                             <img src="https://i.ndtvimg.com/mt/movies/2014-03/chris-evans-ap.jpg" alt="loading..." />
                             <p >Iron Man</p>
                         </div>
@@ -68,19 +72,23 @@ export default function About() {
                     </div>
 
                     <div className="visionersBox">
-                       <div className="visionersTextBox">
+                        <div className="visionersImgBox visionersRightImgMobileView">
+                            <img src="https://englishtribuneimages.blob.core.windows.net/gallary-content/2021/5/2021_5$largeimg_732325396.jpg" alt="loading..." />
+                            <p >Iron Man</p>
+                        </div>
+                        <div className="visionersTextBox">
                             <h1>C.E.O.</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa explicabo
                                 <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, possimus.</p>
                         </div>
-                        <div className="visionersImgBox">
+                        <div className="visionersImgBox visionersRightImg">
                             <img src="https://englishtribuneimages.blob.core.windows.net/gallary-content/2021/5/2021_5$largeimg_732325396.jpg" alt="loading..." />
                             <p >Iron Man</p>
                         </div>
                     </div>
 
 
-
+<h1 style={{padding:"0 16px"}}>Providing you with the latest news from future since <br/> <b style={{fontSize:"50px"}}>  ' 3040 '</b>  </h1>
                 </div>
 
 

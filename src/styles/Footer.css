@@ -23,41 +23,6 @@ width: calc(100vw-250px);
 }
 footer hr{
   
- margin: auto;
+ margin:0 auto;
         width: 90%;
 }
-/* 
-.firstFooterDiv{
-    display: flex;
-    flex: column;
-    width: 100%;
-    height: 100%;
-    background-color: green;
-}
-.footerLogo{
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -30px;
-}
-.footerImageDiv{
-    width: 100px;
-    height: 70px;
-    display: flex;
-   
-
-}
-#footerImg{
-    width: 72%;
-    height: 82%;
-}
-.links1{
-    width: 60%;
-    height: 100%;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
-} */

@@ -80,7 +80,7 @@ navigate('/')
                     <input type="text" onChange={getLogin} value={loginData.pw} className='editInput' id="pw" name="pw" placeholder="Password" required />
 
                 </div>
-                <button type="submit" id="signinbtn">SignIn</button> 
+                <button type="submit" id="signinbtn" >SignIn</button> 
                 <div id="div2">
                     Create new account?<Link id='l4' to='/signup'> <u>SignUp</u></Link>
                 </div>

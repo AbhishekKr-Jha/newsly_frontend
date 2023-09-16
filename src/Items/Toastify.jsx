@@ -3,7 +3,8 @@ import { ToastContainer,toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Toastify(props) {
-    const logedIn = () => toast.{props.}("Login Successful",{
+
+    const toastify = () => toast[props.status]([props.message],{
         position: "top-right",
 autoClose: 3000,
 hideProgressBar: false,
@@ -13,10 +14,13 @@ draggable: false,
 progress: undefined,
 theme: "colored",
     })
-  return (
+
+    toastify()
+    
+  return ( 
   <>
-  
-  
+  <ToastContainer/>
+
   </>
   )
 }

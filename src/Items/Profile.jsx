@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { IconButton } from '@mui/material'
 import EditIcon from '@mui/icons-material/Edit';
+import Toastify from './Toastify';
 import './profile.css'
 import axios from 'axios';
 
@@ -46,6 +47,7 @@ console.log(userLoginData)
     try {
       const {data}=await axios.put(`http://localhost:5000/updateUserDetails/${id}`,userLoginData)
       if(data.success){
+        Toastify({ status: 'success', message: 'update Successful' });
         localStorage.setItem('userLoginDetails',JSON.stringify(userLoginData))
         console.log("updation process successful")
  element.style.display = "flex"

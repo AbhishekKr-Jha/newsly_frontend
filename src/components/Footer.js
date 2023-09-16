@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import { MDBContainer, MDBBtn, MDBIcon } from 'mdb-react-ui-kit'
 import '../styles/Footer.css'
@@ -13,14 +13,14 @@ export default function Footer() {
 
             <footer className="text-center text-lg-start bg-white text-muted footerC " >
 
-                <section className="d-flex justify-content-center justify-content-lg-between pb-4">
+                <section className="d-flex justify-content-center justify-content-lg-between pb-4 iconSection">
 
                     <MDBContainer className=' iconContainer '>
 
 <div className="me-5 d-none d-lg-block ">
                             <span>Get connected with us on social networks:</span>
                         </div>
-                        <section className=''>
+                        <section >
                             <MDBBtn
                                 floating
                                 className='m-1'
@@ -81,11 +81,12 @@ export default function Footer() {
 
 
 
-                <section  style={{ backgroundColor: 'green' }} >
+                {/* <section  style={{ backgroundColor: 'green' }} > */}
+                <section >
                     <hr />
-                    <div className="container text-center text-md-start mt-5">
+                    <div className="container text-center text-md-start mt-5 ">
 
-                        <div className="row mt-3">
+                        <div className="row mt-3 footerLinks" >
 
                             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto footerImg">
                                 <img src="https://lh3.googleusercontent.com/oDoIif4GV1dMAVqNocJFpT5wc4QsOpuIJjqYSsnX1txTA_Klq1KAkUo-QzvRYwqmt64pDaBy53MCj8znPZfcKDuKZe9nL7lmcuXkPA" alt="loding.." />
@@ -94,49 +95,52 @@ export default function Footer() {
 
 
 
+                            {/* <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style={{backgroundColor:"orange"}} > */}
                             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" >
 
                                 <h6 className="text-uppercase fw-bold mb-4">
                                     Links
                                 </h6>
                                 <p>
-                                    <a href="#!" className="text-reset">Home</a>
+                                    <Link to='/' className="text-reset">Home</Link>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">Docs</a>
+                                    <Link to='docs'className="text-reset">Docs</Link>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">News</a>
+                                    <Link to='newsapi' className="text-reset">News</Link>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">About Us</a>
+                                    <Link to='about' className="text-reset">About Us</Link>
                                 </p>
                             </div>
 
 
 
-                            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4"  style={{ backgroundColor: 'blue' }}>
+                            {/* <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4"  style={{ backgroundColor: 'blue' }}> */}
+                            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" >
 
                                 <h6 className="text-uppercase fw-bold mb-4">
                                     Useful links
                                 </h6>
                                 <p>
-                                    <a href="#!" className="text-reset">Bookmarks</a>
+                                    <Link to='mynews' className="text-reset">Bookmarks</Link>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">Membership</a>
+                                    <Link to='#' className="text-reset">Membership</Link>
                                 </p>
                                 <p>
                                     <a href="#!" className="text-reset">Settings</a>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">Help</a>
+                                    <Link to='contact' className="text-reset">Help</Link>
                                 </p>
                             </div>
 
 
 
-                            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"  style={{ backgroundColor: 'yellow' }}>
+                            {/* <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"  style={{ backgroundColor: 'yellow' }}> */}
+                            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"  >
 
                                 <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                                 <p><i className="fas fa-home me-3 text-secondary"></i> India , W.B. Kolkata</p>

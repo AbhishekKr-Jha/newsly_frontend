@@ -12,19 +12,19 @@
    width: 100%;
    
 }
+.aboutbox img{
+    margin: 10px 0;
+    width: 45vw;
+}
 .infotext{
     margin: 20px 15px; 
-    width: ;
+   
 }
 .infotext h1{
   margin: 55px 0px;
 }
 
-.aboutbox img{
-    margin: 10px 0;
-    /* border: 2px solid red; */
-    width: 45vw;
-}
+
 .para{
     font: 20px;
     text-align: center;   
@@ -42,23 +42,27 @@
 
 }
 .visionersBox{
+    border-radius: 18px;
     width: 60vw;
   padding: 20px;
     display: flex;
     align-items: center;
     justify-content:space-evenly ;
    margin: 60px 40px;
-    transition: all linear 0.8s;
+    transition: all linear 0.6s;
 }
 .visionersImgBox{
    width:220px;
    height: 160px; 
 }
 .visionersImgBox img{
-    border-radius: 15px;
+    border-radius: 12px;
     width: 90%;
 object-fit: cover;
  
+}
+.visionersRightImgMobileView{
+    display: none;
 }
 .visionersTextBox{
     display: flex;
@@ -69,7 +73,7 @@ object-fit: cover;
 .visionersBox:hover {
     border-radius: 15px;
    width: 63vw;
-   background-color: aquamarine;
+   background-color:rgba(218, 223, 225,0.8);
    transition:all linear 0.2s ease-in-out;
    transform: translateX(-20px);
 }

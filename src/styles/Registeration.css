@@ -23,17 +23,19 @@ margin-left: 250px;
 }
 .namefield{
     width: 220px;
+    margin: 8px;
 }
  input{
     background: transparent;
     font-weight: 500;
     font-size: 17px;
     padding:8px 14px;
-    border-radius: 15px;
+    border-radius: 12px;
     margin: 5px;
 }
 .editInput{
 width: 280px;
+margin: 8px 0;
 }
 
 #div1{
@@ -45,12 +47,12 @@ width: 280px;
     border-radius: 54%;
     width: 99px;
     padding: 9px;
-    margin-top: 20px;
+    margin-top: 15px;
     font-weight: 500;
 }
 
 #div2{
-   padding: 20px;
+   padding: 15px;
 }
 
 .anotherPageLink{
@@ -63,7 +65,7 @@ width: 280px;
     font-size: 30px;
 }
 #smallHeading{
-    margin-bottom:-10px;
-    margin-top: 20px;
+    margin-bottom:12px;
+    margin-top: 16px;
     font-size:17px ;
 }
