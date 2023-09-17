@@ -14,9 +14,12 @@ import Signing from './components/Signing';
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Docs from "./components/Docs/Docs";
-import Logo from "./components/Logo";
+// import Logo from "./components/Logo";
 import MyNews from "./components/MyNews_Section/MyNews";
 import Profile from "./Items/Profile";
+import OtpVerification from "./components/Registeration_Section/OtpVerification";
+import OTP from "./components/Registeration_Section/OTP";
+
 
 
 function App() {
@@ -31,7 +34,7 @@ const dispatch=useDispatch()
     <>
 
       <div className="containerM">
-        <Logo/>
+        {/* <Logo/> */}
    <Navbar />
 <Routes>
             <Route index element={<Home />} />
@@ -46,7 +49,8 @@ const dispatch=useDispatch()
             <Route path="mynews" element={<MyNews />} />
             <Route path="myprofile" element={<Profile />} />
             <Route path="footer" element={<Footer />} />
-      
+            <Route path="otpVerification" element={<OTP />} />
+            <Route path="emailVerification" element={<OtpVerification />} />
           </Routes>
       </div>
       <Footer/>

@@ -9,6 +9,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export default function Regiteration() {
   const navigate=useNavigate()
+// const location=useLocation()
+// console.log(location)
+ 
+  // console.log("-----",state)
   const success = (text) => toast.success(text,{
     position: "top-right",
 autoClose: 3000,

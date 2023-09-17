@@ -4,6 +4,7 @@ import '../styles/Signing.css'
 import '../styles/MediaQuery/mediaSigning.css'
 
 export default function Signing() {
+   
   return (
    <>
    
@@ -12,6 +13,7 @@ export default function Signing() {
 <Link to='/signup' className="signingitem" title="Click for Registeration or SignUp">Register</Link>
 <Link to='/login' className="signingitem" title="Click for Login or SignIn">Login</Link>
 
+{/* emailVerification */}
 
    </div>
 
@@ -19,3 +21,4 @@ export default function Signing() {
 
   )
 }
+ 
