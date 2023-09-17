@@ -10,7 +10,7 @@ export default function Signing() {
    
    <div className="SigningC">
 
-<Link to='/signup' className="signingitem" title="Click for Registeration or SignUp">Register</Link>
+<Link to='/emailVerification' className="signingitem" title="Click for Registeration or SignUp">Register</Link>
 <Link to='/login' className="signingitem" title="Click for Login or SignIn">Login</Link>
 
 {/* emailVerification */}

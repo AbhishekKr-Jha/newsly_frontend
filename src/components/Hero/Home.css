@@ -72,8 +72,7 @@ position: relative;
 
 
 
-
-/* .homeC::before{
+.homeC::before{
     content: "";
     position: absolute;
     width: 100%;
@@ -83,4 +82,4 @@ position: relative;
     background-color:rgba(218, 223, 225,0.6);
     z-index: -990;
    
-} */
+} 

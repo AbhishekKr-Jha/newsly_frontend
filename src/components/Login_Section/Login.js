@@ -8,29 +8,30 @@ import {login} from '../../redux/LoginSlice.js'
 import {useDispatch} from 'react-redux'
 import { ToastContainer,toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import { fail, success } from '../../Utils/toasts';
 
 
 export default function Login() {
-    const logedIn = () => toast.success("Login Successful",{
-        position: "top-right",
-autoClose: 3000,
-hideProgressBar: false,
-closeOnClick: true,
-pauseOnHover: false,
-draggable: false,
-progress: undefined,
-theme: "colored",
-    })
-    const notlogedIn = () => toast.error("Invalid Credentials",{
-        position: "top-right",
-autoClose: 3000,
-hideProgressBar: false,
-closeOnClick: true,
-pauseOnHover: false,
-draggable: false,
-progress: undefined,
-theme: "colored"
-    })
+//     const logedIn = () => toast.success("Login Successful",{
+//         position: "top-right",
+// autoClose: 3000,
+// hideProgressBar: false,
+// closeOnClick: true,
+// pauseOnHover: false,
+// draggable: false,
+// progress: undefined,
+// theme: "colored",
+//     })
+//     const notlogedIn = () => toast.error("Invalid Credentials",{
+//         position: "top-right",
+// autoClose: 3000,
+// hideProgressBar: false,
+// closeOnClick: true,
+// pauseOnHover: false,
+// draggable: false,
+// progress: undefined,
+// theme: "colored"
+//     })
 
 const dispatch=useDispatch()
 const navigate=useNavigate()
@@ -53,7 +54,8 @@ const loginBtnClick=async(e)=>{
         console.log(data.message)    
         console.log(data.success)       
         if(data.success){ 
- logedIn()
+//  logedIn()
+success("login successful")
 dispatch(login())
         localStorage.setItem('user',data.loginDetails._id) 
         localStorage.setItem('userLoginDetails',JSON.stringify(data.loginDetails))
@@ -61,11 +63,11 @@ dispatch(login())
 navigate('/')
         }
 else{
-    notlogedIn()
+    fail("invalid credentials")
 }
                                                     
-    } catch (error) {
-        notlogedIn()
+} catch (error) {
+       fail("error while login....")
         console.log("_ _",error)
        
     }

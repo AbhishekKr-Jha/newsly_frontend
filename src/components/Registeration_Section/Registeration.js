@@ -1,41 +1,42 @@
 import React from 'react'
 import {useState} from 'react'
 import axios  from 'axios';
-import { Link,useNavigate } from "react-router-dom";
+import { Link,useNavigate,useLocation } from "react-router-dom";
 import './Registeration.css'
  import './mediaRegister.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { fail, success } from '../../Utils/toasts';
 
 export default function Regiteration() {
   const navigate=useNavigate()
-// const location=useLocation()
-// console.log(location)
+const location=useLocation()
+console.log(location) 
  
   // console.log("-----",state)
-  const success = (text) => toast.success(text,{
-    position: "top-right",
-autoClose: 3000,
-hideProgressBar: false,
-closeOnClick: true,
-pauseOnHover: false,
-draggable: false,
-progress: undefined,
-theme: "colored",
-})
-const fail = (text) => toast.error(text,{
-    position: "top-right",
-autoClose: 3000,
-hideProgressBar: false,
-closeOnClick: true,
-pauseOnHover: false,
-draggable: false,
-progress: undefined,
-theme: "colored"
-})
+//   const success = (text) => toast.success(text,{
+//     position: "top-right",
+// autoClose: 3000,
+// hideProgressBar: false,
+// closeOnClick: true,
+// pauseOnHover: false,
+// draggable: false,
+// progress: undefined,
+// theme: "colored",
+// })
+// const fail = (text) => toast.error(text,{
+//     position: "top-right",
+// autoClose: 3000,
+// hideProgressBar: false,
+// closeOnClick: true,
+// pauseOnHover: false,
+// draggable: false,
+// progress: undefined,
+// theme: "colored"
+// })
 
   const [registerData,setregisterData]=useState({
-    firstName:"",lastName:"",contact:"",pw:"",email:"",cpw:""
+    firstName:"",lastName:"",contact:"",pw:"",email:location.state,cpw:""
 })
 
 const getRegister=(e)=>{
@@ -89,7 +90,7 @@ theme="colored" />
             </div>
           </div>
 
-          <input onChange={getRegister} value={registerData.email} type="email" className='editInput' id="email" name="email" placeholder="E-mail address" required autocomplete="off" />
+          <input value={registerData.email} type="email" className='editInput' id="email" name="email" placeholder="E-mail address" required autocomplete="off" disabled/>
           <input onChange={getRegister} value={registerData.contact} type="tel" className='editInput' id="tel" name="contact" placeholder="Contact" required  autocomplete="off"/>  
          <input onChange={getRegister} value={registerData.pw} type="password" className='editInput' id="pw" name="pw" placeholder="Password" required />
           <input onChange={getRegister} value={registerData.cpw} type="text" className='editInput' id="cpw" name="cpw" placeholder="Confirm Password" required />

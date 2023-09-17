@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { useLocation,useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import { fail, success } from '../../Utils/toasts';
 
 export default function OTP() {
     const navigate=useNavigate()
@@ -33,11 +34,11 @@ try {
     const {data}=await axios.post('http://localhost:5000/sendotp',{email:location.state,Otp})
     if(data.success){
         let Email=location.state
-        navigate('/signup')
+        navigate('/signup',{state:Email})        
         console.log("email verification with otp was successful")
     }
 } catch (error) {
-  console.log("validation otp__----",error)  
+  console.log("validation otp__----",error)
 }
         }
     }
