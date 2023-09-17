@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { MDBContainer, MDBBtn, MDBIcon } from 'mdb-react-ui-kit'
-import '../styles/Footer.css'
-import '../styles/MediaQuery/mediaFooter.css'
+import './Footer.css'
+import './mediaFooter.css'
 
 export default function Footer() {
     return (

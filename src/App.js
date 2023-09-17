@@ -4,18 +4,18 @@ import {useDispatch} from 'react-redux'
 import {login} from './redux/LoginSlice'
 
 import './App.css';
-import About from './components/About';
-import Home from './components/Home';
-import Login from './components/Login';
-import Navbar from './components/Navbar';
-import Registeration from './components/Registeration';
-import News from './components/News';
+import About from './components/About/About';
+import Home from './components/Hero/Home';
+import Login from './components/Login_Section/Login';
+import Navbar from './components/Nav/Navbar';
+import Registeration from './components/Registeration_Section/Registeration';
+import News from './components/News_Section/News';
 import Signing from './components/Signing';
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Docs from "./components/Docs";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import Docs from "./components/Docs/Docs";
 import Logo from "./components/Logo";
-import MyNews from "./components/MyNews";
+import MyNews from "./components/MyNews_Section/MyNews";
 import Profile from "./Items/Profile";
 
 

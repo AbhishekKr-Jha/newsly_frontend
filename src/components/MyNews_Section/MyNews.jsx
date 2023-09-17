@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios'
 
 
-import '../styles/MyNews.css'
+// import '../styles/MyNews.css'
 
 export default function MyNews() {
     const [myNews, setmyNews] = useState([])
@@ -43,7 +43,7 @@ export default function MyNews() {
                 console.log("the err ___", error)
             }
     
-        }
+        } 
 
         getMyBookmarks()
     }, [])

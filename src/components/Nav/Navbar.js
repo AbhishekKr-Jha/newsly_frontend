@@ -1,15 +1,15 @@
 import React from 'react'
 import { useNavigate, NavLink, Link } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux'
-import '../styles/Navbar.css'
-import '../styles/MediaQuery/mediaNav.css'
-import { Box, IconButton, Modal, Popover, Typography, Button } from '@mui/material'
+import './Navbar.css'
+import './mediaNav.css'
+import { Box, IconButton, Modal } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
-import { logout } from '../redux/LoginSlice'
-import Profile from '../Items/Profile';
+import { logout } from '../../redux/LoginSlice'
+import Profile from '../../Items/Profile';
 
 
 

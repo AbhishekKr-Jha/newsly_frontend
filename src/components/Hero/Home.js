@@ -1,8 +1,8 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
 
-import '../styles/Home.css'
-import '../styles/MediaQuery/mediaHome.css'
+import './Home.css'
+import './mediaHome.css'
 
 
 export default function Home() {

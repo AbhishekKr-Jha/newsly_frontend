@@ -2,9 +2,9 @@ import React from 'react'
 import {useState} from 'react'
 import axios from 'axios'
 import {  Link,useNavigate } from "react-router-dom";
-import '../styles/Login.css'
-import '../styles/MediaQuery/mediaLogin.css'
-import {login} from '../redux/LoginSlice.js'
+import './Login.css'
+import './mediaLogin.css'
+import {login} from '../../redux/LoginSlice.js'
 import {useDispatch} from 'react-redux'
 import { ToastContainer,toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
@@ -59,10 +59,15 @@ dispatch(login())
         localStorage.setItem('userLoginDetails',JSON.stringify(data.loginDetails))
     
 navigate('/')
-}                                                      
+        }
+else{
+    notlogedIn()
+}
+                                                    
     } catch (error) {
-        console.log("_ _",error)
         notlogedIn()
+        console.log("_ _",error)
+       
     }
 }
 

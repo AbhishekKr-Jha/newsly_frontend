@@ -1,8 +1,10 @@
 import React from 'react'
-import '../styles/About.css'
-import '../styles/MediaQuery/mediaAbout.css'
+import './About.css'
+import './mediaAbout.css'
 export default function About() {
-    return (//todo.....800
+
+    return (
+        //todo.....800
         <>
             <div className="aboutC">
                 <div className="aboutbox">

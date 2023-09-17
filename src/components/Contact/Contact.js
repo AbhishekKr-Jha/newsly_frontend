@@ -1,6 +1,6 @@
 import React from 'react'
-import '../styles/Contact.css'
-import '../styles/MediaQuery/mediaContact.css'
+import './Contact.css'
+import './mediaContact.css'
 import { Box, IconButton } from '@mui/material'
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 import AlternateEmailSharpIcon from '@mui/icons-material/AlternateEmailSharp';

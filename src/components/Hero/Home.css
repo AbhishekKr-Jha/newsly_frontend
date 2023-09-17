@@ -4,6 +4,7 @@
     height: 100vh;
     background-color: rgb(80, 77, 77,0.4);
     color: green;
+position: relative;
 
 }
 .page1{
@@ -30,14 +31,16 @@
     background: -webkit-linear-gradient(#c00b26, #316f05);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  
 }
 .homeHeading::before{
     content: "Newsly";
     position: absolute;
     top: -3px;
-    left: -3px;
+    left: -6px;
     -webkit-text-stroke: 2px rgb(238, 10, 86);
     z-index: -1;
+   
 }
 .page1 h3{
     margin-left: 400px;
@@ -71,3 +74,14 @@
 
 
 
+/* .homeC::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ right: -700px;
+    transform: skewY(-130deg);
+    background-color:rgba(218, 223, 225,0.6);
+    z-index: -990;
+   
+} */

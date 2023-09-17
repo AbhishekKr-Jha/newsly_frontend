@@ -2,8 +2,8 @@ import React from 'react'
 import {useState} from 'react'
 import axios  from 'axios';
 import { Link,useNavigate } from "react-router-dom";
-import '../styles/Registeration.css'
- import '../styles/MediaQuery/mediaRegister.css'
+import './Registeration.css'
+ import './mediaRegister.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 

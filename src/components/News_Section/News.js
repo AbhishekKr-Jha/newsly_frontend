@@ -4,9 +4,8 @@ import BookmarkAddIcon from '@mui/icons-material/BookmarkAdd';
 import BookmarkAddedIcon from '@mui/icons-material/BookmarkAdded';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import LinearProgress from '@mui/material/LinearProgress';
 import { ThreeDots } from 'react-loader-spinner';
-import '../styles/News.css'
+import './News.css'
 
 import axios from 'axios'
 
