@@ -73,7 +73,7 @@ console.log(element)
     const delBookmark = async (element) => {
         const id = localStorage.getItem('user')
         try {
-            const { data } = await axios.delete(`http://localhost:5000/removeBookmarks/${id}`, element)
+            const { data } = await axios.post(`http://localhost:5000/removeBookmarks/${id}`,{ publishedAt: element?.publishedAt })
             if (data.success) {
                 console.log("it is working")
                 console.log(data.message) 

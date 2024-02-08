@@ -3,13 +3,13 @@ import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Box, IconButton } from '@mui/material'
 import BookmarkAddedIcon from '@mui/icons-material/BookmarkAdded';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios'
 import { success } from '../../Utils/toasts';
 
 
-// import '../styles/MyNews.css'
+// import '../styles/MyNews.css'      
 
 export default function MyNews() {
     const [myNews, setmyNews] = useState([])
@@ -56,11 +56,9 @@ export default function MyNews() {
         try {
             const { data } = await axios.post(`http://localhost:5000/removeBookmarks/${id}`, { publishedAt: element?.publishedAt })
             if (data.success) {
-                console.log(data.message)
+                // console.log(data.message)
                 getMyBookmarks()
                 // setmyNews(data.user.bookmarks)
-                console.log(data.delBookmark)
-
                 success("bookmark removed successfully")
             }
         } catch (error) {
