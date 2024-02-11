@@ -11,7 +11,7 @@ import { success } from '../../Utils/toasts';
 
 // import '../styles/MyNews.css'      
 
-export default function MyNews() {
+export default function MyNews({back_url}) {
     const [myNews, setmyNews] = useState([])
 
 
@@ -29,13 +29,13 @@ export default function MyNews() {
 
     useEffect(() => {
         getMyBookmarks()
-    }, [])
+    })
     const getMyBookmarks = async () => {
         const id = localStorage.getItem('user')
 
         try {
 
-            const { data } = await axios.post(`http://localhost:5000/getBookmarks/${id}`)
+            const { data } = await axios.post(`${back_url}/getBookmarks/${id}`)
             console.log("hello")
             console.log(data)
             if (data.success) {
@@ -54,7 +54,7 @@ export default function MyNews() {
         const id = localStorage.getItem('user')
         console.log(element)
         try {
-            const { data } = await axios.post(`http://localhost:5000/removeBookmarks/${id}`, { publishedAt: element?.publishedAt })
+            const { data } = await axios.post(`${back_url}/removeBookmarks/${id}`, { publishedAt: element?.publishedAt })
             if (data.success) {
                 // console.log(data.message)
                 getMyBookmarks()

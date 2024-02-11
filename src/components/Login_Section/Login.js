@@ -11,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { fail, success } from '../../Utils/toasts';
 
 
-export default function Login() {
+export default function Login({back_url}) {
 //     const logedIn = () => toast.success("Login Successful",{
 //         position: "top-right",
 // autoClose: 3000,
@@ -50,7 +50,7 @@ const loginBtnClick=async(e)=>{
     console.log("yes")
     e.preventDefault()
     try {
-    const {data}=await axios.post('http://localhost:5000/login',loginData)     
+    const {data}=await axios.post(`${back_url}/login`,loginData)     
         console.log(data.message)    
         console.log(data.success)       
         if(data.success){ 

@@ -11,7 +11,7 @@ import axios from 'axios'
 
 
 
-export default function News() {
+export default function News({back_url}) {
 
     const [ndata, setndata] = useState(null)
     const [Loader, setLoader] = useState(true)
@@ -61,7 +61,7 @@ console.log("it is running agian")
         const id = localStorage.getItem('user')
 console.log(element)
         try {
-            const { data } = await axios.post(`http://localhost:5000/userBookmarks/${id}`, element)
+            const { data } = await axios.post(`${back_url}/userBookmarks/${id}`, element)
             if (data.success) {
                 console.log(data.message)
             }
@@ -73,7 +73,7 @@ console.log(element)
     const delBookmark = async (element) => {
         const id = localStorage.getItem('user')
         try {
-            const { data } = await axios.post(`http://localhost:5000/removeBookmarks/${id}`,{ publishedAt: element?.publishedAt })
+            const { data } = await axios.post(`${back_url}/removeBookmarks/${id}`,{ publishedAt: element?.publishedAt })
             if (data.success) {
                 console.log("it is working")
                 console.log(data.message) 

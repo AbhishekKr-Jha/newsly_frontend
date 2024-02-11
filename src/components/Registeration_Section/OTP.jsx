@@ -3,7 +3,7 @@ import { useLocation,useNavigate } from 'react-router-dom'
 import axios from 'axios'
 // import { fail, success } from '../../Utils/toasts';
 
-export default function OTP() {
+export default function OTP({back_url}) {
     const navigate=useNavigate()
     const location=useLocation()
     console.log(location)
@@ -31,7 +31,7 @@ export default function OTP() {
         }
         else{
 try {
-    const {data}=await axios.post('http://localhost:5000/sendotp',{email:location.state,Otp})
+    const {data}=await axios.post(`${back_url}/sendotp`,{email:location.state,Otp})
     if(data.success){
         let Email=location.state
         navigate('/signup',{state:Email})        

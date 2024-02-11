@@ -23,6 +23,9 @@ import OTP from "./components/Registeration_Section/OTP";
 
 
 function App() {
+
+  const BASE_URL="https://headlinehub-backend-v1.onrender.com"
+
 const dispatch=useDispatch()
     const loggedInOrNot=localStorage.getItem('user')
     useEffect(()=>{
@@ -40,17 +43,17 @@ const dispatch=useDispatch()
             <Route index element={<Home />} />
             <Route path="/" element={<Home />} />
             <Route path="/docs" element={<Docs/>} />
-            <Route path="login" element={<Login />} />
-            <Route path="newsapi" element={<News />} />
+            <Route path="login" element={<Login back_url={BASE_URL} />} />
+            <Route path="newsapi" element={<News back_url={BASE_URL} />} />
             <Route path="about" element={<About />} />
             <Route path="signing" element={<Signing />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="signup" element={<Registeration />} />
-            <Route path="mynews" element={<MyNews />} />
-            <Route path="myprofile" element={<Profile />} />
+            <Route path="signup" element={<Registeration back_url={BASE_URL} />} />
+            <Route path="mynews" element={<MyNews back_url={BASE_URL} />} />
+            <Route path="myprofile" element={<Profile back_url={BASE_URL} />} />
             <Route path="footer" element={<Footer />} />
-            <Route path="otpVerification" element={<OTP />} />
-            <Route path="emailVerification" element={<OtpVerification />} />
+            <Route path="otpVerification" element={<OTP back_url={BASE_URL} />} />
+            <Route path="emailVerification" element={<OtpVerification back_url={BASE_URL} />} />
           </Routes>
       </div>
       <Footer/>

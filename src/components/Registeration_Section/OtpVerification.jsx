@@ -3,7 +3,7 @@ import {useNavigate} from 'react-router-dom'
 import axios from 'axios'
 import './OtpVerification.css'
 
-export default function OtpVerification() {
+export default function OtpVerification({back_url}) {
     const navigate=useNavigate()
     const [VerificationData,setVerificationData]=useState({
         otp:"",email:""
@@ -21,7 +21,7 @@ const otpBtn=async(e)=>{
     console.log("button clicked")
     console.log(VerificationData.email)
     try {
-        const {data}=await axios.post('http://localhost:5000/sendotp',VerificationData)
+        const {data}=await axios.post(`${back_url}/sendotp`,VerificationData)
         if(data.success){
             console.log("email sent successfully")
             navigate('/otpVerification',{state:VerificationData.email})

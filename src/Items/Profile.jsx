@@ -10,7 +10,7 @@ import axios from 'axios';
 
 
 
-export default function Profile() {
+export default function Profile({back_url}) {
   const [userLoginData, setuserLoginData] = useState("")
 
   const element = document.getElementsByClassName('userProfileData')[0]
@@ -45,7 +45,7 @@ console.log(userLoginData)
   console.log(".........updatikim.....")
     const id=localStorage.getItem('user')
     try {
-      const {data}=await axios.put(`http://localhost:5000/updateUserDetails/${id}`,userLoginData)
+      const {data}=await axios.put(`${back_url}/updateUserDetails/${id}`,userLoginData)
       if(data.success){
         Toastify({ status: 'success', message: 'update Successful' });
         localStorage.setItem('userLoginDetails',JSON.stringify(userLoginData))

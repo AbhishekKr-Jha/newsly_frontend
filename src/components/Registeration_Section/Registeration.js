@@ -8,7 +8,7 @@ import { ToastContainer  } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { fail, success } from '../../Utils/toasts';
 
-export default function Regiteration() {
+export default function Regiteration({back_url}) {
   const navigate=useNavigate()
 const location=useLocation()
 console.log(location) 
@@ -49,7 +49,7 @@ setregisterData({...registerData,[name]:value})
 const registerBtnClick=async(e)=>{
     e.preventDefault()
     try {
-    const {data}=await axios.post('http://localhost:5000/register',registerData)       
+    const {data}=await axios.post(`${back_url}/register`,registerData)       
         console.log(data.message)    
         if(data.success){
           navigate('/signing')
