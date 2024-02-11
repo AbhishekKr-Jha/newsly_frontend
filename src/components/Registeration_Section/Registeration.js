@@ -4,7 +4,7 @@ import axios  from 'axios';
 import { Link,useNavigate,useLocation } from "react-router-dom";
 import './Registeration.css'
  import './mediaRegister.css'
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer  } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { fail, success } from '../../Utils/toasts';
 

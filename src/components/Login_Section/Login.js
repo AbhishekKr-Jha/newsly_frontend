@@ -6,7 +6,7 @@ import './Login.css'
 import './mediaLogin.css'
 import {login} from '../../redux/LoginSlice.js'
 import {useDispatch} from 'react-redux'
-import { ToastContainer,toast } from 'react-toastify'
+import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import { fail, success } from '../../Utils/toasts';
 
