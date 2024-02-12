@@ -31,7 +31,7 @@ height: 100%;
   z-index:-100 ;
 }
 .logoBox{display:none;}
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 600px) {
  .logoBox{display:block;}
 }
 
