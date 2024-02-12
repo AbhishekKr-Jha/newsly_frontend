@@ -64,6 +64,7 @@ dispatch(login())
 navigate('/')
         }
 else{
+    console.log("error")
     fail("invalid credentials")
 }
                                                     
