@@ -47,8 +47,8 @@ const value=e.target.value
 setloginData({...loginData,[name]:value})
 }
 
-const loginBtnClick=async(e)=>{
-    console.log("yes")
+const loginBtnClick=async(e)=>{ 
+    console.log("yes") 
     e.preventDefault()
     try {
     const {data}=await axios.post(`https://headlinehub-backend-v1.onrender.com/login`,loginData)     

@@ -12,6 +12,7 @@ export default function Regiteration({back_url}) {
   const navigate=useNavigate()
 const location=useLocation()
 console.log(location) 
+console.log(back_url)
  
   // console.log("-----",state)
 //   const success = (text) => toast.success(text,{
