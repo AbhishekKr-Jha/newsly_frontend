@@ -30,10 +30,12 @@ height: 100%;
   top: -50%;
   z-index:-100 ;
 }
+.logoBox{display:none;}
+@media screen and (max-width: 760px) {
+ .logoBox{display:block;}
+}
 
-
-
-
+ 
 
 /* position: relative;
  z-index: -; */
