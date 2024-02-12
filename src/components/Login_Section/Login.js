@@ -51,7 +51,7 @@ const loginBtnClick=async(e)=>{
     console.log("yes") 
     e.preventDefault()
     try {
-    const {data}=await axios.post(`https://headlinehub-backend-v1.onrender.com/login`,loginData)     
+    const {data}=await axios.post(`${back_url}/login`,loginData)     
         console.log(data.message)    
         console.log(data.success)       
         if(data.success){ 
@@ -100,6 +100,6 @@ else{
 
 
 
-        </>
+        </> 
     )
 }

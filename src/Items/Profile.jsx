@@ -23,7 +23,7 @@ export default function Profile({back_url}) {
     console.log(userData)
     setuserLoginData(userData)
     console.log("____", userLoginData)
-  },[userLoginData])
+  },[])
 
 
 
