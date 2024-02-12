@@ -13,6 +13,8 @@ import axios from 'axios';
 export default function Profile({back_url}) {
   const [userLoginData, setuserLoginData] = useState("")
 
+  console.log(back_url)
+
   const element = document.getElementsByClassName('userProfileData')[0]
   const updationForm=document.getElementsByClassName('updationForm')[0]
 

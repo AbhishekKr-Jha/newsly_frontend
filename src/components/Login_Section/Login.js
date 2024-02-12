@@ -12,6 +12,7 @@ import { fail, success } from '../../Utils/toasts';
 
 
 export default function Login({back_url}) {
+    console.log(back_url)
 //     const logedIn = () => toast.success("Login Successful",{
 //         position: "top-right",
 // autoClose: 3000,
@@ -50,7 +51,7 @@ const loginBtnClick=async(e)=>{
     console.log("yes")
     e.preventDefault()
     try {
-    const {data}=await axios.post(`${back_url}/login`,loginData)     
+    const {data}=await axios.post(`https://headlinehub-backend-v1.onrender.com/login`,loginData)     
         console.log(data.message)    
         console.log(data.success)       
         if(data.success){ 

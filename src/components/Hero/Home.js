@@ -5,7 +5,8 @@ import './Home.css'
 import './mediaHome.css'
 
 
-export default function Home() {
+export default function Home({back_url}) {
+  console.log("---",back_url)
   const navigate=useNavigate()
   return (
     <>

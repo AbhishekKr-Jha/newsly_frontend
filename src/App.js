@@ -40,8 +40,8 @@ const dispatch=useDispatch()
         {/* <Logo/> */}
    <Navbar />
 <Routes>
-            <Route index element={<Home />} />
-            <Route path="/" element={<Home />} />
+            <Route index element={<Home  back_url={BASE_URL} />} />
+            <Route path="/" element={<Home back_url={BASE_URL} />} />
             <Route path="/docs" element={<Docs/>} />
             <Route path="login" element={<Login back_url={BASE_URL} />} />
             <Route path="newsapi" element={<News back_url={BASE_URL} />} />
